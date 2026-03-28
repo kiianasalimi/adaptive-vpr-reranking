@@ -1,6 +1,6 @@
-# **Visual Place Recognition – Extension 6.1: Adaptive Re-ranking**
+# **Visual Place Recognition – Extension: Adaptive Re-ranking**
 
-This repository extends a Visual Place Recognition (VPR) pipeline with **Extension : adaptive re-ranking**.
+This repository extends a Visual Place Recognition (VPR) pipeline with **Extension: adaptive re-ranking**.
 
 ## **Summary**
 
