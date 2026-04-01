@@ -1,0 +1,42 @@
+{
+  "label": "baseline_correct (P(top1 is correct))",
+  "decision_rule": "EASY if P(correct) >= t else HARD",
+  "features": [
+    "inliers_top1"
+  ],
+  "best_C": 0.1,
+  "best_threshold": 0.15,
+  "val_roc_auc_at_best_C": 0.9530849003624592,
+  "val_clf_acc": 0.913955961466283,
+  "val_baseline_R@1": 0.8784561491304892,
+  "val_fullrerank_R@1": 0.898035781308645,
+  "val_adaptive_R@1": 0.8893406730889528,
+  "val_hard_rate": 0.11431877893156511,
+  "val_savings_vs_fullrerank": 0.8413971600150132,
+  "thresholds_swept": [
+    0.05,
+    0.15,
+    0.25,
+    0.35,
+    0.45,
+    0.55,
+    0.65,
+    0.75,
+    0.85,
+    0.95
+  ],
+  "C_grid": [
+    0.01,
+    0.03,
+    0.1,
+    0.3,
+    1.0,
+    3.0,
+    10.0,
+    30.0,
+    100.0
+  ],
+  "class_weight": "none",
+  "solver": "liblinear",
+  "max_iter": 2000
+}
