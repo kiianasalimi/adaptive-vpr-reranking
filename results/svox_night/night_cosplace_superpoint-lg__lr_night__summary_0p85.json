@@ -1,0 +1,34 @@
+{
+  "preds_dir": "logs/svox_night_test_cosplace/2025-12-26_16-53-32/preds",
+  "out_dir": "logs/svox_night_test_cosplace/2025-12-26_16-53-32/adaptive_superpoint-lg__lr_night_0p85",
+  "matcher": "superpoint-lg",
+  "device": "cuda",
+  "im_size": 512,
+  "K": 20,
+  "positive_dist_threshold": 25.0,
+  "recall_values": [
+    1,
+    5,
+    10,
+    20
+  ],
+  "lr_model": "models/lr_night.joblib",
+  "lr_threshold": 0.85,
+  "evaluated_queries": 823,
+  "skipped_queries": 0,
+  "hard_rate": 0.724179829890644,
+  "avg_matches_per_query": 14.759416767922236,
+  "savings_vs_fullrerank": 0.2620291616038882,
+  "baseline": {
+    "R@1": 0.33292831105710813,
+    "R@5": 0.5139732685297691,
+    "R@10": 0.5905224787363305,
+    "R@20": 0.675577156743621
+  },
+  "adaptive": {
+    "R@1": 0.6026731470230863,
+    "R@5": 0.6452004860267315,
+    "R@10": 0.6597812879708383,
+    "R@20": 0.675577156743621
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "preds_dir": "logs/svox_night_test_mixvpr_4096/2025-12-26_13-50-30/preds",
+  "out_dir": "logs/svox_night_test_mixvpr_4096/2025-12-26_13-50-30/adaptive_loftr__lr_night_0p85",
+  "matcher": "loftr",
+  "device": "cuda",
+  "im_size": 512,
+  "K": 20,
+  "positive_dist_threshold": 25.0,
+  "recall_values": [
+    1,
+    5,
+    10,
+    20
+  ],
+  "lr_model": "models/lr_night.joblib",
+  "lr_threshold": 0.85,
+  "evaluated_queries": 823,
+  "skipped_queries": 0,
+  "hard_rate": 0.4957472660996355,
+  "avg_matches_per_query": 10.419198055893075,
+  "savings_vs_fullrerank": 0.47904009720534624,
+  "baseline": {
+    "R@1": 0.6233292831105711,
+    "R@5": 0.8019441069258809,
+    "R@10": 0.8371810449574727,
+    "R@20": 0.8736330498177399
+  },
+  "adaptive": {
+    "R@1": 0.8213851761846902,
+    "R@5": 0.8578371810449574,
+    "R@10": 0.8687727825030377,
+    "R@20": 0.8736330498177399
+  }
+}

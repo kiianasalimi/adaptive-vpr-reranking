@@ -1,0 +1,34 @@
+{
+  "preds_dir": "logs/sf_xs_mixvpr_4096/2025-12-21_16-42-38/preds",
+  "out_dir": "logs/sf_xs_mixvpr_4096/2025-12-21_16-42-38/adaptive_loftr__lr_sun_0p45",
+  "matcher": "loftr",
+  "device": "cuda",
+  "im_size": 512,
+  "K": 20,
+  "positive_dist_threshold": 25.0,
+  "recall_values": [
+    1,
+    5,
+    10,
+    20
+  ],
+  "lr_model": "models/lr_sun.joblib",
+  "lr_threshold": 0.45,
+  "evaluated_queries": 1000,
+  "skipped_queries": 0,
+  "hard_rate": 0.252,
+  "avg_matches_per_query": 5.788,
+  "savings_vs_fullrerank": 0.7106,
+  "baseline": {
+    "R@1": 0.696,
+    "R@5": 0.787,
+    "R@10": 0.811,
+    "R@20": 0.836
+  },
+  "adaptive": {
+    "R@1": 0.758,
+    "R@5": 0.812,
+    "R@10": 0.831,
+    "R@20": 0.836
+  }
+}
